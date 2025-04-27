@@ -20,6 +20,8 @@ function HCommand:fillMenu(menu)
 end
 
 function checkIfBothHands(item)
+    if item == nil then return false end
+
     if item:isRequiresEquippedBothHands() and item:isTwoHandWeapon() then
         return true
     elseif not item:isRequiresEquippedBothHands() and item:isTwoHandWeapon() then
