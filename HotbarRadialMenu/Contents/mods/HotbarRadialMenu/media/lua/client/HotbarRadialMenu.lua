@@ -31,6 +31,16 @@ function checkIfBothHands(item)
     end
 end
 
+function checkIfEquippedAlready(item)
+    if item == nil then return false end
+
+    if player:getPrimaryHandItem() == item or player:getSecondaryHandItem() == item and not item:isTwoHandWeapon() then
+        return true
+    else
+        return false
+    end
+end
+
 function HCommand:invoke()
     if self.action == 1 then
         player:setPrimaryHandItem(nil)
@@ -39,11 +49,19 @@ function HCommand:invoke()
             player:setSecondaryHandItem(nil)
         end
 
+        if checkIfEquippedAlready(self.item) then
+            player:setSecondaryHandItem(nil)
+        end
+
         player:setPrimaryHandItem(self.item)
     elseif self.action == 2 then
         player:setSecondaryHandItem(nil)
 
         if checkIfBothHands(player:getPrimaryHandItem()) then
+            player:setPrimaryHandItem(nil)
+        end
+
+        if checkIfEquippedAlready(self.item) then
             player:setPrimaryHandItem(nil)
         end
 

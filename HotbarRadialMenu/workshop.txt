@@ -1,6 +1,23 @@
 version=1
 id=3471177620
 title=Hotbar Radial Menu
+description=[Requires Mod Options to work]
 description=Adds a radial menu for all hotbar items.
-tags=
+description=
+description=Expect bugs as this is my first Lua "project". (I have no idea what I'm really doing)
+description=
+description=There will be a rewrite eventually.
+description=The radial is not perfect, I don't like how each equip option is on it.
+description=The idea is each hotbar item is it's own, and you select it and another radial asks if you want to equip it, equip it as a primary or a secondary, and an option to dequip it.
+description=
+description=
+description=
+description=Bugs, issues, want to contribute?
+description=This project is available on [url=https://github.com/papershredder432/HotbarRadialMenu]GitHub[/url].
+description=
+description=
+description=
+description=Workshop ID: 3471177620
+description=Mod ID: HotbarRadialMenu
+tags=Build 41;Interface
 visibility=public

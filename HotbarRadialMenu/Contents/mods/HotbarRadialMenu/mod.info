@@ -1,5 +1,5 @@
 name=HotbarRadialMenu
 id=HotbarRadialMenu
-description=This is an example mod containing two maps.
+description=This mod adds a radial menu for the hotbar items.
 poster=poster.png
 require=modoptions
