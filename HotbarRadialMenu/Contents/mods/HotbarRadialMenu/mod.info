@@ -1,0 +1,5 @@
+name=HotbarRadialMenu
+id=HotbarRadialMenu
+description=This is an example mod containing two maps.
+poster=poster.png
+require=modoptions

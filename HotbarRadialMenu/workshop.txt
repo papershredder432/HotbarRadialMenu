@@ -1,0 +1,8 @@
+version=1
+title=Hotbar Radial Menu
+description=Adds a radial menu for all hotbar items.
+description=
+description=
+description=
+tags=
+visibility=private
